@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.6/dist/full.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- header start  -->
+    <header>
+        <div class="flex justify-center items-center bg-slate-900 h-96">
+            <div>
+                <h1 class="text-orange-600 text-6xl">select your Best Five</h1>
+                <p class="text-sky-300 text-center mt-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                    amet sint. Velit <br>
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br> nostrud amet</p>
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+
+
+    <!-- main start  -->
+    <main class="">
+        <!-- section-1  -->
+        <section class="w-full mx-auto ps-52 py-20 ">
+            <!-- card  -->
+            <div class="grid grid-cols-2 gap-8 w-full ">
+                <div class="grid grid-cols-3 gap-2 ">
+                    <!-- card-1  -->
+                    <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10 ">
+                            <img src="images/peakpx.jpg" alt="" class="rounded-sm" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Lionel Messi</h2>
+                            <div class="flex">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>120 Assist</p>
+                            </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary px-8" onclick="addToCard(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-1 end  -->
+
+                    <!-- card-2  -->
+                    <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/HD-wallpaper-neymar-jr-soccer-brasil-neymar-brazil-neymar-junior-football.jpg"
+                                alt="" class="rounded-sm" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Neymar Jr</h2>
+                            <div class="flex">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>120 Assist</p>
+                            </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary px-8" onclick="addToCard(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-2 end  -->
+
+                    <!-- card-3  -->
+                    <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/2a5fc4fcdeb5be93fb379185a9545265 (1).jpeg" alt="" class="rounded-sm" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Kylian Mbappé</h2>
+                            <div class="flex">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>120 Assist</p>
+                            </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary px-8" onclick="addToCard(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3 end  -->
+
+                    <!-- card-4  -->
+                    <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/peakpx.jpg" alt="" class="rounded-sm" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Vítor Machado</h2>
+                            <div class="flex">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>120 Assist</p>
+                            </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary px-8" onclick="addToCard(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-4 end  -->
+                    <!-- card-5  -->
+                    <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/peakpx.jpg" alt="" class="rounded-sm" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Sergio Ramos</h2>
+                            <div class="flex">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>120 Assist</p>
+                            </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary px-8" onclick="addToCard(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-5 end  -->
+                    <!-- card-6  -->
+                    <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <img src="images/peakpx.jpg" alt="" class="rounded-sm" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Renato Sanches</h2>
+                            <div class="flex">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>120 Assist</p>
+                            </div>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary px-8" onclick="addToCard(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-6 end  -->
+                </div>
+
+                <!--list items start -->
+                <div class="grid grid-rows-2">
+                    <div class="">
+                        <div>
+                            <h2 class="text-3xl ">Selected-<span id="select-all-list">0</span></h2>
+                            <!-- table  -->
+                            <div class="overflow-x-auto">
+                                <table class="table table-zebra">
+                                    <!-- head -->
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Name</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody id="list-items">
+                                        <!-- <tr>
+                                            <th>1</th>
+                                            <td>Cy Ganderton</td>
+                                            
+                                        </tr> -->
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- list items end  -->
+
+                    <!-- Budget form start  -->
+                    <div class="flex justify-center items-center bg-stone-900 w-64 h-96">
+                        <div class="pb-8 my-8">
+                            <h2 class="text-3xl">Budget</h2>
+                            <h3 class="">per player</h3>
+                            <input id="input-field" type="text" class="block mb-4">
+                            <button id="btn-calculate" class="btn btn-primary px-8">calculate</button>
+                            <h3>Player Expenses$<span id="Expenses-amount">0</span></h3>
+                            <h3>Manager</h3>
+                            <input id="Manager-field" type="text">
+                            <h3>Coach</h3>
+                            <input id="coach-field" type="text" class="block mb-4">
+                            <button id="btn-calculate-total" class="btn btn-primary px-8">calculate total</button>
+                            <h2>total$<span id="total-amount">0</span></h2>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- input form end  -->
+
+            </div>
+
+
+        </section>
+    </main>
+
+    <!-- main end  -->
+
+    <!-- footer  -->
+    <hr>
+    <footer class="footer footer-center p-10 bg-base-300 text-base-content">
+        <div>
+            <p>Copyright @ 2022 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- javascript link  -->
+    <script src="js/dom.js"></script>
+
+    <script src="js/Budget.js"></script>
+
+
+
+</body>
+
+</html>
